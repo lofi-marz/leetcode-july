@@ -10,12 +10,11 @@ var arrangeCoins = function(n) {
 	}
 	k--;
 	return k;
-	
 };
 
 var arrangeCoinsBetter = function(n) {
 	return Math.floor((Math.sqrt(8*n+1)+1)/2)-1
-	return (Math.sqrt(8*n+1)/2)
+
 }
 
 let testNums = [1,2,3,4,5,6,7,8,9,10];
