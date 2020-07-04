@@ -4,9 +4,7 @@
  * @return {number[]}
  */
 var prisonAfterNDays = function(cells, N) {
-	cells = evolve(cells);
-	N--;
-	N = N %14;
+	N = N%14 == 0?14:N%14
 
     for (let i = 0; i < N; i++) {
 		cells = evolve(cells);
@@ -17,10 +15,11 @@ var prisonAfterNDays = function(cells, N) {
 function evolve(cells) {
 	let newcells = [0];
 	for (let j = 1; j < 7; j++) {
-			
+			 
 		newcells[j] =  (cells[j-1] == cells[j+1]) ? 1 : 0;
 	}
 	newcells.push(0);
+	//console.log(newcells);
 	return newcells;
 }
 
