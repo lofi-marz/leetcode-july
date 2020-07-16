@@ -29,6 +29,7 @@ var levelOrderBottom = function(root) {
 };
 
 
+
 let nums = [3,9,20,null,null,15,7];
 let root = new TreeNode(nums[0], null, null);
 makeTree(root, nums, 0);
